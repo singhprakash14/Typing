@@ -1,0 +1,169 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.countDown {
+  font-size: 36px;
+}
+
+/* .input {
+  width: 300px;
+  height: 40px;
+  font-size: 18px;
+  padding: 5px;
+} */
+.input {
+  width: 300px;
+  height: 40px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+.input::placeholder {
+  color: #999;
+}
+
+.input:hover {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.input:disabled {
+  background-color: #e6e6e6;
+  cursor: not-allowed;
+}
+
+.is-size-5{
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+
+}
+
+.button {
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+}
+
+.card {
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content span {
+  padding: 5px;
+}
+
+.has-background-success {
+  background-color: #c7f0c7;
+}
+
+.has-background-danger {
+  background-color: #ffb8b8;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.is-size-5 {
+  font-size: 20px;
+}
+
+.is-size-1 {
+  font-size: 48px;
+}
+
+.has-text-centered {
+  text-align: center;
+}
+
+.has-text-primary {
+  color: #007bff;
+}
+
+.has-text-info {
+  color: #17a2b8;
+}
+.timeSelection {
+  display: flex;
+  align-items: center;
+}
+
+.timeSelection label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.timeSelection select {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #d33838;
+  background-color: #d35050;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.timeSelection select:hover {
+  border-color: #a31616;
+}
+
+.timeSelection select:focus {
+  border-color: #912626;
+}
+
+/* Styling the dropdown arrow */
+.timeSelection select::-ms-expand {
+  display: none;
+}
+
+.timeSelection select::after {
+  content: "\\25BC";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 12px;
+  pointer-events: none;
+}
+
+/* Styling the options */
+.timeSelection select option {
+  font-size: 16px;
+}
